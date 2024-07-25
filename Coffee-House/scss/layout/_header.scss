@@ -1,77 +1,77 @@
-@import '../base/webkit';
-@import '../base/normalize';
-@import '../abstracts/mixin';
-@import '../abstracts/variables';
-@import '../abstracts/placeholders';
+@import "../base/webkit";
+@import "../base/normalize";
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
 
 .header {
-    &__container {
-        max-height: 3.75rem;
+  &__container {
+    max-height: 3.75rem;
 
-        @include flex();
-        justify-content: space-between;
-    }
-    &__nav {
-        // flex: 1 1 auto;
+    @include flex();
+    justify-content: space-between;
+  }
+  &__nav {
+    // flex: 1 1 auto;
 
-        @include flex();
+    @include flex();
+  }
+  &__btn {
+    padding-top: 0.7rem;
+    @media screen and (max-width: 768px) {
+      display: none;
     }
-    &__btn {
-        padding-top: 0.7rem;
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
+  }
+  &__img-burger {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
     }
-    &__img-burger {
-        display: none;
-        @media screen and (max-width: 768px) {
-            display: block;
-        }
-    }
+  }
 }
 .nav {
-    &__list {
-        padding: 0;
-        margin: 0;
-        flex: 1 1 auto;
+  &__list {
+    padding: 0;
+    margin: 0;
+    flex: 1 1 auto;
 
-        @include flex();
-        justify-content: center;
-        gap: 1.9rem;
-        list-style: none;
-        @media screen and (max-width: 768px) {
-            display: flex; /* Используем flex для столбцового макета */
-            flex-direction: column;
-            position: fixed;
-            top: 0;
-            right: -768px; /* Начальное положение за экраном */
-            background-color: $bg-body; /* Цвет фона меню */
-            width: 768px;
-            height: 100%;
-            padding-top: 60px; /* Отступ сверху для учета высоты верхнего элемента */
-            transition: right 0.3s ease; /* Плавное анимированное изменение положения */
-        }
+    @include flex();
+    justify-content: center;
+    gap: 1.9rem;
+    list-style: none;
+    @media screen and (max-width: 768px) {
+      display: flex; /* Используем flex для столбцового макета */
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: -768px; /* Начальное положение за экраном */
+      background-color: $bg-body; /* Цвет фона меню */
+      width: 768px;
+      height: 100%;
+      padding-top: 60px; /* Отступ сверху для учета высоты верхнего элемента */
+      transition: right 0.3s ease; /* Плавное анимированное изменение положения */
     }
-    &__item {
-        @include flex();
-    }
-    &__link {
-        @extend %link;
-        padding: 0.3rem 0.3rem 0.3rem 0.3rem;
-        // @media screen and (max-width: 768px){
+  }
+  &__item {
+    @include flex();
+  }
+  &__link {
+    @extend %link;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    // @media screen and (max-width: 768px){
 
-        // }
-    }
+    // }
+  }
 }
 #toMenu {
-    margin-left: 20rem;
-    @media screen and (max-width: 1100px) {
-        margin-left: 0rem
-    }    
-};
+  margin-left: 20rem;
+  @media screen and (max-width: 1100px) {
+    margin-left: 0rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
-    #mainNav.show-menu ul {
-        right: 0; /* Показываем меню при смене класса */
-    }
-};
+  #mainNav.show-menu ul {
+    right: 0; /* Показываем меню при смене класса */
+  }
+}

@@ -1,8 +1,8 @@
 @mixin flex($a: row) {
-    display: flex;
-    flex-direction: $a;
+  display: flex;
+  flex-direction: $a;
 }
 
 @function toRem($value) {
-    @return $value / 16px * 1rem;
+  @return $value / 16px * 1rem;
 }

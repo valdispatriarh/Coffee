@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
-@import 'layout/header';
-@import 'layout/footer';
+@import "layout/header";
+@import "layout/footer";
 
-@import 'base/webkit';
-@import 'base/normalize';
-@import 'base/body';
-@import 'base/h1-h3';
+@import "base/webkit";
+@import "base/normalize";
+@import "base/body";
+@import "base/h1-h3";
 
-@import 'abstracts/mixin';
-@import 'abstracts/variables';
-@import 'abstracts/placeholders';
+@import "abstracts/mixin";
+@import "abstracts/variables";
+@import "abstracts/placeholders";
 
-@import 'components/link-and-btn';
-@import 'components/block-def';
-@import 'components/card-menu';
+@import "components/link-and-btn";
+@import "components/block-def";
+@import "components/card-menu";
 
-@import 'pages/page1';
+@import "pages/page1";

@@ -1,327 +1,327 @@
-@import '../base/webkit';
-@import '../base/normalize';
-@import '../base/body';
+@import "../base/webkit";
+@import "../base/normalize";
+@import "../base/body";
 
-@import '../abstracts/mixin';
-@import '../abstracts/variables';
-@import '../abstracts/placeholders';
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
 
 .h2-i {
-    @extend %h2-i;
-    @media screen and (max-width: 750px) {
-        font-size: 2.625rem;
-    }
-    @media screen and (max-width: 555px) {
-        font-size: 2.625rem;
-    }
-    @media screen and (max-width: 380px) {
-        font-size: 2rem;
-    }
+  @extend %h2-i;
+  @media screen and (max-width: 750px) {
+    font-size: 2.625rem;
+  }
+  @media screen and (max-width: 555px) {
+    font-size: 2.625rem;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 2rem;
+  }
 }
 
 .page1 {
-    flex: 1 1 auto;
-    padding-top: 1.25rem;
+  flex: 1 1 auto;
+  padding-top: 1.25rem;
 
-    @include flex(column);
-    gap: 6.25rem;
+  @include flex(column);
+  gap: 6.25rem;
 }
 //hero
 .hero {
-    &__container {
-        background-image: url('../assets/img-hero.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 1.7rem;
-        max-height: 40rem;
-        padding: 6.25rem;
+  &__container {
+    background-image: url("../assets/img-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 1.7rem;
+    max-height: 40rem;
+    padding: 6.25rem;
 
-        @include flex();
-        @media screen and (max-width: 1100px) {
-            padding: 4rem;
-            max-height: 70rem;
-        }
-        @media screen and (max-width: 750px) {
-            width: 500px;
-            height: 552px;
-            padding: 3.25rem;
-        }
-        @media screen and (max-width: 555px) {
-            width: 360px;
-            height: 552px;
-            padding: 2.25rem;
-        }
-        @media screen and (max-width: 380px) {
-            width: 348px;
-            height: 552px;
-            padding: 0.25rem;
-        }
+    @include flex();
+    @media screen and (max-width: 1100px) {
+      padding: 4rem;
+      max-height: 70rem;
     }
-    &__block-def {
-        @include flex(column);
-        min-width: 49%;
-        gap: 1.1rem;
-        @media screen and (max-width: 1100px) {
-            gap: 0rem;
-        }
-        @media screen and (max-width: 750px) {
-            gap: 0rem;
-        }
-        @media screen and (max-width: 555px) {
-            gap: 0rem;
-        }
-        @media screen and (max-width: 380px) {
-            gap: 2rem;
-        }
+    @media screen and (max-width: 750px) {
+      width: 500px;
+      height: 552px;
+      padding: 3.25rem;
     }
-    &__block-zero {
-        @include flex(column);
-        min-width: 49%;
-        gap: 1.1rem;
-        @media screen and (max-width: 1400px) {
-            min-width: 25%;
-        }
-        @media screen and (max-width: 1100px) {
-            display: none;
-        }
+    @media screen and (max-width: 555px) {
+      width: 360px;
+      height: 552px;
+      padding: 2.25rem;
     }
+    @media screen and (max-width: 380px) {
+      width: 348px;
+      height: 552px;
+      padding: 0.25rem;
+    }
+  }
+  &__block-def {
+    @include flex(column);
+    min-width: 49%;
+    gap: 1.1rem;
+    @media screen and (max-width: 1100px) {
+      gap: 0rem;
+    }
+    @media screen and (max-width: 750px) {
+      gap: 0rem;
+    }
+    @media screen and (max-width: 555px) {
+      gap: 0rem;
+    }
+    @media screen and (max-width: 380px) {
+      gap: 2rem;
+    }
+  }
+  &__block-zero {
+    @include flex(column);
+    min-width: 49%;
+    gap: 1.1rem;
+    @media screen and (max-width: 1400px) {
+      min-width: 25%;
+    }
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
 }
 .block-def {
-    &__h1 {
-        padding: 0;
-        margin: 0;
-        @extend %h1;
-        @media screen and (max-width: 750px) {
-            font-size: 2.625rem;
-        }
-        @media screen and (max-width: 555px) {
-            font-size: 2.625rem;
-        }
-        @media screen and (max-width: 380px) {
-            font-size: 2.625rem;
-            line-height: 115%;
-            padding-top: 3rem;
-        }
+  &__h1 {
+    padding: 0;
+    margin: 0;
+    @extend %h1;
+    @media screen and (max-width: 750px) {
+      font-size: 2.625rem;
     }
-    &__h1-i {
-        @extend %h1-i;
-        @media screen and (max-width: 750px) {
-            font-size: 2.625rem;
-        }
-        @media screen and (max-width: 555px) {
-            font-size: 2.625rem;
-        }
-        @media screen and (max-width: 380px) {
-            font-size: 2.625rem;
-        }
+    @media screen and (max-width: 555px) {
+      font-size: 2.625rem;
     }
-    &__text {
-        color: $text-l;
+    @media screen and (max-width: 380px) {
+      font-size: 2.625rem;
+      line-height: 115%;
+      padding-top: 3rem;
     }
-    &__btn {
-        @extend %link-to-btn;
-        @media screen and (max-width: 1100px) {
-            margin-top: 3rem;
-        }
+  }
+  &__h1-i {
+    @extend %h1-i;
+    @media screen and (max-width: 750px) {
+      font-size: 2.625rem;
     }
+    @media screen and (max-width: 555px) {
+      font-size: 2.625rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 2.625rem;
+    }
+  }
+  &__text {
+    color: $text-l;
+  }
+  &__btn {
+    @extend %link-to-btn;
+    @media screen and (max-width: 1100px) {
+      margin-top: 3rem;
+    }
+  }
 }
 
 //favorite-coffee
 
 .favorite-coffee {
-    &__container {
-        @include flex(column);
-        align-items: center;
+  &__container {
+    @include flex(column);
+    align-items: center;
+  }
+  &__h2-favorite-coffee {
+    @extend %h2;
+    text-align: center;
+    @media screen and (max-width: 750px) {
+      font-size: 2rem;
     }
-    &__h2-favorite-coffee {
-        @extend %h2;
-        text-align: center;
-        @media screen and (max-width: 750px) {
-            font-size: 2rem;
-        }
+  }
+  &__card-menu {
+    @include flex();
+    @extend %card-menu;
+    gap: 20rem;
+    justify-content: space-between;
+    @media screen and (max-width: 1400px) {
+      gap: 10rem;
     }
-    &__card-menu {
-        @include flex();
-        @extend %card-menu;
-        gap: 20rem;
-        justify-content: space-between;
-        @media screen and (max-width: 1400px) {
-            gap: 10rem;
-        }
-        @media screen and (max-width: 1100px) {
-            gap: 1rem;
-        }
+    @media screen and (max-width: 1100px) {
+      gap: 1rem;
     }
-    &__controls {
-        @include flex();
-        margin-top: 1rem;
-    }
+  }
+  &__controls {
+    @include flex();
+    margin-top: 1rem;
+  }
 }
 .card-menu {
-    &__btn-left {
-        @extend %btn-l;
-        width: 3.75rem;
-        height: 3.75rem;
-        padding: 0;
-        margin: 21rem 0;
-        border-radius: 2rem;
+  &__btn-left {
+    @extend %btn-l;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0;
+    margin: 21rem 0;
+    border-radius: 2rem;
 
-        @include flex();
-        align-items: center;
-        @media screen and (max-width: 750px) {
-            display: none;
-        }
-        &:hover path {
-            stroke: $brd-l;
-        }
-        &:hover rect {
-            stroke: $bg-bg;
-        }
+    @include flex();
+    align-items: center;
+    @media screen and (max-width: 750px) {
+      display: none;
     }
-    &__card {
-        @include flex(column);
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 2rem;
-        @media screen and (max-width: 555px) {
-            width: 21.75rem;
-        }
+    &:hover path {
+      stroke: $brd-l;
     }
-    &__btn-right {
-        @extend %btn-l;
-        @include flex();
-        width: 3.75rem;
-        height: 3.75rem;
-        padding: 0;
-        margin: 21rem 0;
-        border-radius: 2rem;
-        @media screen and (max-width: 750px) {
-            display: none;
-        }
-        &:hover path {
-            stroke: $brd-l;
-        }
-        &:hover rect {
-            stroke: $bg-bg;
-        }
+    &:hover rect {
+      stroke: $bg-bg;
     }
+  }
+  &__card {
+    @include flex(column);
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    @media screen and (max-width: 555px) {
+      width: 21.75rem;
+    }
+  }
+  &__btn-right {
+    @extend %btn-l;
+    @include flex();
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0;
+    margin: 21rem 0;
+    border-radius: 2rem;
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+    &:hover path {
+      stroke: $brd-l;
+    }
+    &:hover rect {
+      stroke: $bg-bg;
+    }
+  }
 }
 .text {
-    padding: 1rem 0;
-    margin: -1.7rem 3rem;
-    @media screen and (max-width: 1100px) {
-        padding: 0rem 0px;
-        margin: 0.5rem 2rem -1rem 2rem;
-    }
-    @media screen and (max-width: 555px) {
-        margin: 0.5rem 1rem -1rem 1rem;
-    }
+  padding: 1rem 0;
+  margin: -1.7rem 3rem;
+  @media screen and (max-width: 1100px) {
+    padding: 0rem 0px;
+    margin: 0.5rem 2rem -1rem 2rem;
+  }
+  @media screen and (max-width: 555px) {
+    margin: 0.5rem 1rem -1rem 1rem;
+  }
 }
 
 //about
 
 .about {
-    &__container {
-        @include flex(column);
+  &__container {
+    @include flex(column);
+  }
+  &__h2-about {
+    @extend %h2;
+    margin: -0.6875rem 0 0 -0.75rem;
+    padding-bottom: 2.1875rem;
+    @media screen and (max-width: 750px) {
+      font-size: 2rem;
+      margin: 0rem 1rem 0 0rem;
     }
-    &__h2-about {
-        @extend %h2;
-        margin: -0.6875rem 0 0 -0.75rem;
-        padding-bottom: 2.1875rem;
-        @media screen and (max-width: 750px) {
-            font-size: 2rem;
-            margin: 0rem 1rem 0 0rem;
-        }
+  }
+  &__block-foto {
+    @include flex();
+    @media screen and (max-width: 1400px) {
+      @include flex(column);
     }
-    &__block-foto {
-        @include flex();
-        @media screen and (max-width: 1400px) {
-            @include flex(column);
-        }
-    }
+  }
 }
 .block-foto {
-    &__column {
-        @include flex(column);
-        align-items: center;
-        justify-content: center;
-    }
+  &__column {
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+  }
 }
 .column {
-    &__foto {
-        border-radius: 2rem;
-        margin: 0 2rem 2.3rem 0;
-        transition: transform 0.3s ease; /* Заменил text-decoration на transform */
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.1);
-        }
-        @media screen and (max-width: 750px) {
-            width: 21.75rem;
-        }
+  &__foto {
+    border-radius: 2rem;
+    margin: 0 2rem 2.3rem 0;
+    transition: transform 0.3s ease; /* Заменил text-decoration на transform */
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
     }
-    #foto-none {
-        @media screen and (max-width: 1400px) {
-            display: none;
-        }
+    @media screen and (max-width: 750px) {
+      width: 21.75rem;
     }
+  }
+  #foto-none {
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
 }
 //mobile-app
 .mobile-app {
-    &__container {
-        @include flex();
-        padding-bottom: 6.25rem;
-        @media screen and (max-width: 1100px) {
-            @include flex(column);
-        }
+  &__container {
+    @include flex();
+    padding-bottom: 6.25rem;
+    @media screen and (max-width: 1100px) {
+      @include flex(column);
     }
+  }
 
-    &__block-def-app {
-        @include flex(column);
-        justify-content: flex-start;
-        gap: 2.5rem;
-        padding-top: 6.7em;
-    }
+  &__block-def-app {
+    @include flex(column);
+    justify-content: flex-start;
+    gap: 2.5rem;
+    padding-top: 6.7em;
+  }
 
-    &__img {
-        @include flex();
-        margin-top: -2rem;
-        @media screen and (max-width: 1100px) {
-            margin-top: 0rem;
-        }
-        @media screen and (max-width: 750px) {
-            width: 21.75rem;
-        }
+  &__img {
+    @include flex();
+    margin-top: -2rem;
+    @media screen and (max-width: 1100px) {
+      margin-top: 0rem;
     }
+    @media screen and (max-width: 750px) {
+      width: 21.75rem;
+    }
+  }
 }
 .block-def-app {
-    &__h2-mobile-app {
-        @extend %h2;
-        padding-right: 6rem;
-        @media screen and (max-width: 750px) {
-            font-size: 2rem;
-        }
+  &__h2-mobile-app {
+    @extend %h2;
+    padding-right: 6rem;
+    @media screen and (max-width: 750px) {
+      font-size: 2rem;
     }
-    &__text {
-        color: $text-d;
-        padding-right: 6rem;
-        margin: 0;
+  }
+  &__text {
+    color: $text-d;
+    padding-right: 6rem;
+    margin: 0;
+  }
+  &__btns {
+    @include flex();
+    gap: 1.25rem;
+    @media screen and (max-width: 750px) {
+      @include flex(column);
     }
-    &__btns {
-        @include flex();
-        gap: 1.25rem;
-        @media screen and (max-width: 750px) {
-            @include flex(column);
-        }
-    }
+  }
 }
 .btns {
-    &__btn {
-        @extend %btn-l;
-        @include flex();
-        border-radius: 2rem;
-        padding: 0.625rem 3.75rem 0.625rem 1.25rem;
-        border: 0.0625rem solid $brd-d;
-    }
+  &__btn {
+    @extend %btn-l;
+    @include flex();
+    border-radius: 2rem;
+    padding: 0.625rem 3.75rem 0.625rem 1.25rem;
+    border: 0.0625rem solid $brd-d;
+  }
 }

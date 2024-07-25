@@ -1,43 +1,43 @@
-@import '../abstracts/mixin';
+@import "../abstracts/mixin";
 //Typography
 %heading-1 {
-    font-size: toRem(72px);
-    font-weight: 600;
-    line-height: 105%;
+  font-size: toRem(72px);
+  font-weight: 600;
+  line-height: 105%;
 }
 %heading-1accent {
-    font-style: italic;
+  font-style: italic;
 }
 %heading-2 {
-    font-size: toRem(60px);
-    font-weight: 600;
-    line-height: 125%;
+  font-size: toRem(60px);
+  font-weight: 600;
+  line-height: 125%;
 }
 %heading-2accent {
-    font-style: italic;
+  font-style: italic;
 }
 %heading-3 {
-    font-size: toRem(24px);
-    font-weight: 600;
-    line-height: 125%;
+  font-size: toRem(24px);
+  font-weight: 600;
+  line-height: 125%;
 }
 %medium {
-    font-size: toRem(16px);
-    font-weight: 400;
-    line-height: 150%;
+  font-size: toRem(16px);
+  font-weight: 400;
+  line-height: 150%;
 }
 %caption {
-    font-size: toRem(10px);
-    font-weight: 600;
-    line-height: 140%;
+  font-size: toRem(10px);
+  font-weight: 600;
+  line-height: 140%;
 }
 %link-button {
-    font-size: toRem(16px);
-    font-weight: 600;
-    line-height: 150%;
+  font-size: toRem(16px);
+  font-weight: 600;
+  line-height: 150%;
 }
 %burger-link {
-    font-size: toRem(32px);
-    font-weight: 600;
-    line-height: 125%;
+  font-size: toRem(32px);
+  font-weight: 600;
+  line-height: 125%;
 }
