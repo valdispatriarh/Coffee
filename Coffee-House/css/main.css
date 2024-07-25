@@ -1230,7 +1230,7 @@ body {
 
 * {
   box-sizing: border-box;
-  border: 0.0625rem solid rgb(0, 0, 0);
+  border: 0.0625rem solid rgba(0, 0, 0, 0);
 }
 
 html {
@@ -2174,7 +2174,7 @@ body {
 
 * {
   box-sizing: border-box;
-  border: 0.0625rem solid rgb(0, 0, 0);
+  border: 0.0625rem solid rgba(0, 0, 0, 0);
 }
 
 html {
