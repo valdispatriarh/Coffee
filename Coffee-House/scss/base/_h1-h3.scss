@@ -1,0 +1,31 @@
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+@import '../abstracts/placeholders';
+
+%h1 {
+    font-family: $font;
+    @extend %heading-1;
+    color: $text-l;
+    padding: 0;
+    margin: 0;
+}
+
+%h1-i {
+    @extend %h1;
+    @extend %heading-1accent;
+    color: $text-a;
+}
+
+%h2 {
+    font-family: $font;
+    @extend %heading-2;
+    color: $text-d;
+    padding: 0;
+    margin: 0;
+}
+
+%h2-i {
+    @extend %h2;
+    @extend %heading-2accent;
+    color: $text-a;
+}

@@ -1,0 +1,35 @@
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+@import '../abstracts/placeholders';
+* {
+    box-sizing: border-box;
+    border: 0.0625rem solid rgba(0, 0, 0, 50);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-body;
+    font-family: $font;
+    @extend %medium;
+    color: $text-d;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    @include flex(column);
+    padding: 1.25rem 2.5rem 2.5rem 2.5rem;
+    @media screen and (max-width: 555px) {
+        padding: 0.25rem 0.5rem 1.5rem 0.5rem;
+    }
+}
+
+[class*='__container'] {
+    max-width: 85rem;
+    margin: 0 auto;
+}

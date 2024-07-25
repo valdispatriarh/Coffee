@@ -1,0 +1,92 @@
+@import '../base/webkit';
+@import '../base/normalize';
+@import '../base/body';
+
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+@import '../abstracts/placeholders';
+
+.h1-i {
+    @extend %h2-i;
+}
+
+.page2 {
+    &__container {
+        @include flex(column);
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 1.875rem;
+        padding-bottom: 6.25rem;
+    }
+}
+
+.menu {
+    &__h1 {
+        @extend %h2;
+        margin: 0;
+        padding: 0.625rem 15.625rem 0.625rem 15.625rem;
+    }
+
+    &__link-list {
+        @include flex();
+    }
+    .link-list {
+        &__button {
+            font-family: $font;
+            @extend %link-button;
+            color: $text-d;
+            background-color: $bg-body;
+            border-radius: 2rem;
+            border: 0.0625rem solid $brd-l;
+            text-align: center;
+            margin: 0.1875rem 0.125rem 0.625rem 0.625rem;
+            padding: 0.25rem 1.8125rem 0.5rem 0.9375rem;
+        }
+        &__button img {
+            vertical-align: middle;
+        }
+    }
+
+    &__block-card {
+        @include flex();
+        // justify-content:space-between;
+        flex-wrap: wrap;
+        margin-top: -1.25rem;
+    }
+}
+
+.block-card {
+    &__card {
+        @include flex(column);
+        max-width: 21.0625rem;
+        justify-content: flex-start;
+        border: 1.25rem solid $bg-body;
+        height: 33rem;
+        text-align: flex-start;
+        text-align: left;
+        transition: transform 0.3s ease; /* Заменил text-decoration на transform */
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.card {
+    &__img {
+        border-radius: 2rem;
+    }
+    &__h3-name {
+        @extend %heading-3;
+        padding: 1.9375rem 0.6875rem 0.625rem 0.125rem;
+    }
+    &__text {
+        padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+    }
+    &__h3-price {
+        @extend %heading-3;
+        margin-top: auto;
+        padding: 0.0625rem 0.0625rem 0.0625rem 0.0625rem;
+    }
+}

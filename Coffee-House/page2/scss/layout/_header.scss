@@ -1,0 +1,53 @@
+@import '../base/webkit';
+@import '../base/normalize';
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+@import '../abstracts/placeholders';
+
+.header {
+    &__container {
+        max-height: 3.75rem;
+
+        @include flex();
+        justify-content: space-between;
+    }
+    &__nav {
+        flex: 1 1 auto;
+
+        @include flex();
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__btn {
+        padding-top: 0.7rem;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__img-burger {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+.nav {
+    &__list {
+        padding: 0;
+        margin: 0;
+        flex: 1 1 auto;
+
+        @include flex();
+        justify-content: center;
+        gap: 1.9rem;
+        list-style: none;
+    }
+    &__item {
+        @include flex();
+    }
+    &__link {
+        @extend %link;
+        padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+}
