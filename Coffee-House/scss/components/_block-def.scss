@@ -1,18 +1,18 @@
-@import '../abstracts/mixin';
-@import '../abstracts/variables';
-@import '../abstracts/placeholders';
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
 
-@import '../base/h1-h3';
-@import '../components/link-and-btn';
+@import "../base/h1-h3";
+@import "../components/link-and-btn";
 
 %block-def {
-    h2 {
-        @extend %h2;
-    }
-    i {
-        @extend %h2-i;
-    }
-    .btn {
-        @extend %btn-l;
-    }
+  h2 {
+    @extend %h2;
+  }
+  i {
+    @extend %h2-i;
+  }
+  .btn {
+    @extend %btn-l;
+  }
 }

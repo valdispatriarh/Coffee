@@ -1,93 +1,93 @@
-@import '../base/webkit';
-@import '../base/normalize';
+@import "../base/webkit";
+@import "../base/normalize";
 
-@import '../abstracts/mixin';
-@import '../abstracts/variables';
-@import '../abstracts/placeholders';
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
 
 .footer {
-    &__container {
-        @include flex();
-        background-color: $bg-bg;
-        border-radius: 2rem;
-        padding: 5rem;
-        gap: 8.625rem;
+  &__container {
+    @include flex();
+    background-color: $bg-bg;
+    border-radius: 2rem;
+    padding: 5rem;
+    gap: 8.625rem;
 
-        @media screen and (max-width: 1100px) {
-            @include flex(column);
-            gap: 0rem;
-        }
+    @media screen and (max-width: 1100px) {
+      @include flex(column);
+      gap: 0rem;
     }
+  }
 }
 .contact {
-    &__column1 {
-        @include flex(column);
-        align-items: flex-start;
-    }
-    &__column2 {
-        @include flex(column);
-        margin-top: 3.1875rem;
-    }
+  &__column1 {
+    @include flex(column);
+    align-items: flex-start;
+  }
+  &__column2 {
+    @include flex(column);
+    margin-top: 3.1875rem;
+  }
 }
 .column1 {
-    &__h2-footer {
-        @extend %heading-2;
-        color: $text-l;
-        padding: 0.625rem 0 0 0.625rem;
-        margin: 0;
-    }
-    &__socials {
-        @include flex();
+  &__h2-footer {
+    @extend %heading-2;
+    color: $text-l;
+    padding: 0.625rem 0 0 0.625rem;
+    margin: 0;
+  }
+  &__socials {
+    @include flex();
 
-        margin: 1.875rem 5.875rem 0.4375rem 0rem;
-    }
+    margin: 1.875rem 5.875rem 0.4375rem 0rem;
+  }
 }
 .h2-i {
-    @extend %h2-i;
+  @extend %h2-i;
 }
 .socials {
-    &__social {
-        width: 3.75rem;
-        height: 3.75rem;
-        border-radius: 15rem;
-        border: 0.0625rem solid $brd-l;
-        background-color: transparent;
-        padding: 0.4375rem;
-        margin: 0.5625rem;
-        cursor: pointer;
-        &:hover {
-            background-color: $bg-bg;
-            color: $text-l;
-        }
+  &__social {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 15rem;
+    border: 0.0625rem solid $brd-l;
+    background-color: transparent;
+    padding: 0.4375rem;
+    margin: 0.5625rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg-bg;
+      color: $text-l;
     }
+  }
 }
 .column2 {
-    // .column2__h3
+  // .column2__h3
 
-    &__h3 {
-        font-family: $font;
-        @extend %heading-3;
-        color: $text-l;
-    }
-    &__block-mobile {
-        color: $text-l;
-    }
+  &__h3 {
+    font-family: $font;
+    @extend %heading-3;
+    color: $text-l;
+  }
+  &__block-mobile {
+    color: $text-l;
+  }
 }
 .block-mobile {
-    &__mobile {
-        margin: 1.3125rem 0 0 0;
-    }
+  &__mobile {
+    margin: 1.3125rem 0 0 0;
+  }
 }
 .mobile {
-    &__link {
-        font-family: $font;
-        @extend %link-button;
-        color: $text-l;
-        text-decoration: none;
-        transition: text-decoration 2s ease;
-        cursor: pointer;
-        &:hover {
-            text-decoration: underline;
-        }
+  &__link {
+    font-family: $font;
+    @extend %link-button;
+    color: $text-l;
+    text-decoration: none;
+    transition: text-decoration 2s ease;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
     }
+  }
 }

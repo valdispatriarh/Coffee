@@ -1,31 +1,31 @@
-@import '../abstracts/mixin';
-@import '../abstracts/variables';
-@import '../abstracts/placeholders';
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
 * {
-    box-sizing: border-box;
-    border: 0.0625rem solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  border: 0.0625rem solid rgba(0, 0, 0, 0);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: $bg-body;
-    font-family: $font;
-    @extend %medium;
-    color: $text-d;
-    touch-action: manipulation;
+  background-color: $bg-body;
+  font-family: $font;
+  @extend %medium;
+  color: $text-d;
+  touch-action: manipulation;
 }
 
 .wrapper {
-    min-height: 100%;
-    overflow: clip;
-    @include flex(column);
-    padding: 1.25rem 2.5rem 2.5rem 2.5rem;
+  min-height: 100%;
+  overflow: clip;
+  @include flex(column);
+  padding: 1.25rem 2.5rem 2.5rem 2.5rem;
 }
 
-[class*='__container'] {
-    max-width: 85rem;
-    margin: 0 auto;
+[class*="__container"] {
+  max-width: 85rem;
+  margin: 0 auto;
 }
